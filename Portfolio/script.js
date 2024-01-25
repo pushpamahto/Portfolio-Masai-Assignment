@@ -17,3 +17,12 @@ bar.addEventListener("click", function(){
     }
 
 })
+
+
+
+var typed = new Typed('.auto-typing', {
+    strings: ["Full Stack Developer !"],
+    typeSpeed: 50,
+    backSpeed : 50, 
+    loop : true
+  });

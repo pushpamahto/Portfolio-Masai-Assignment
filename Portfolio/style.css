@@ -9,6 +9,11 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+
+}
+
 #home{
     margin-top:10%;
     
@@ -88,6 +93,9 @@ ul li a:hover{
 .mainText p{
     font-size: 30px;
 } 
+.mainText p span{
+    color: rgb(191, 21, 179);
+}
 
 .mainText #cvBtn{
     width:40%;
