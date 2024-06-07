@@ -387,7 +387,7 @@ ul li a:hover{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin-top: ; */
+    margin-bottom: 10px;
 }
 
 .projectCard{
@@ -449,6 +449,7 @@ ul li a:hover{
 }
 
 .connect{
+   
     display: flex;
     justify-content: center;
     flex-direction: column;
