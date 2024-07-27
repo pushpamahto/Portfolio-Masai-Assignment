@@ -29,6 +29,7 @@ nav{
     position: fixed;
     top: 0%;
     width:100%;
+    z-index: 99999;
 }
 
 ul{
@@ -210,6 +211,7 @@ ul li a:hover{
 
 
 .skill-bars{
+    
   padding: 25px 30px;
   width: 600px;
   background: #333333;
@@ -235,6 +237,7 @@ ul li a:hover{
    
 }
 .skill-bars .bar{
+   
   margin: 20px 0;
   
   
@@ -308,6 +311,9 @@ ul li a:hover{
   .bar .progress-line.bootstrap span{
     width: 80%;
   }
+  .bar .progress-line.chakraui span{
+    width: 80%;
+  }
 
 
 .progress-line span::before{
@@ -361,6 +367,9 @@ ul li a:hover{
     content: "85%";
   }
   .progress-line.bootstrap span::after{
+    content: "80%";
+  }
+  .progress-line.chakraui span::after{
     content: "80%";
   }
   
@@ -545,9 +554,6 @@ ul li a:hover{
 
 
 }
-
-
-
 
 
 .contact-box {
