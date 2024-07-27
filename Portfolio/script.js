@@ -21,7 +21,7 @@ bar.addEventListener("click", function(){
 
 
 var typed = new Typed('.auto-typing', {
-    strings: ["Full Stack Developer !"],
+    strings: ["Full Stack Developer !", "Quick Learner...", "Software Developer", "Problem Solver"],
     typeSpeed: 50,
     backSpeed : 50, 
     loop : true

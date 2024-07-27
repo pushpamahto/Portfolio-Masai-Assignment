@@ -64,13 +64,15 @@ ul li a:hover{
 
 
 .logo{
-    font-size: 22px;
+    font-size: 16px;
+   font-family: cursive;
     color: rgb(191, 21, 179);
    
 }
 
 .main{
     display: flex;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     margin-top: 105px;
@@ -159,6 +161,18 @@ ul li a:hover{
     padding-bottom: 3px;
 
 }
+
+#pic1{
+    margin-top: 3%;
+    background-color: rgb(226, 93, 249);
+    border-radius: 30%;
+}
+
+
+
+
+
+
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -203,6 +217,8 @@ ul li a:hover{
   border-radius: 10px;
   margin: auto;
   margin-bottom: 8%;
+  
+  
 }
 .skill-bars h2{
     text-align: center;
@@ -220,6 +236,8 @@ ul li a:hover{
 }
 .skill-bars .bar{
   margin: 20px 0;
+  
+  
 }
 .skill-bars .bar:first-child{
   margin-top: 0px;
@@ -239,6 +257,7 @@ ul li a:hover{
   }
 }
 .skill-bars .bar .progress-line{
+   
   height: 10px;
   width: 100%;
   background: #e0dddd;
@@ -249,7 +268,11 @@ ul li a:hover{
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
               0 1px rgba(181, 180, 180, 0.8);
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  
 }
+
+
+
 @keyframes animate {
   100%{
     transform: scaleX(1);
@@ -271,16 +294,19 @@ ul li a:hover{
   width: 80%;
 }
 .bar .progress-line.js span{
-  width: 70%;
+  width: 90%;
 }
 .bar .progress-line.react span{
-  width: 50%;
+  width: 90%;
 }
 .bar .progress-line.nodejs span{
-  width: 60%;
+  width: 75%;
 }
 .bar .progress-line.git span{
-    width: 75%;
+    width: 85%;
+  }
+  .bar .progress-line.bootstrap span{
+    width: 80%;
   }
 
 
@@ -323,16 +349,19 @@ ul li a:hover{
   content: "80%";
 }
 .progress-line.js span::after{
-  content: "70%";
+  content: "90%";
 }
 .progress-line.react span::after{
-  content: "50%";
+  content: "90%";
 }
 .progress-line.nodejs span::after{
-  content: "60%";
+  content: "75%";
 }
 .progress-line.git span::after{
-    content: "75%";
+    content: "85%";
+  }
+  .progress-line.bootstrap span::after{
+    content: "80%";
   }
   
 
@@ -462,6 +491,12 @@ ul li a:hover{
     margin-bottom: 20%;
 }
 
+.connect:hover{
+    box-shadow: rgba(226, 56, 245, 0.4) 0px 0px 0px 2px, rgba(239, 71, 206, 0.65) 0px 4px 6px -1px, rgba(242, 50, 191, 0.345) 0px 1px 0px inset;
+    cursor: pointer;
+    /* background-color:blue ; */
+}
+
 .contact-inputs{
     margin-top: 5%;
     width:300px;
@@ -513,6 +548,51 @@ ul li a:hover{
 
 
 
+
+
+.contact-box {
+    display: flex;
+    /* border: 1px solid white; */
+    width: 70%;
+    margin: auto;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.contact-box .box {
+    background-color: rgb(36, 34, 34);
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+}
+
+.box:hover{
+    box-shadow: rgba(226, 56, 245, 0.4) 0px 0px 0px 2px, rgba(239, 71, 206, 0.65) 0px 4px 6px -1px, rgba(242, 50, 191, 0.345) 0px 1px 0px inset;
+    cursor: pointer;
+    /* background-color:blue ; */
+}
+
+
+
+.contact-box .box .icon {
+    font-size: 20px;
+    color: rgb(191, 21, 179);
+}
+
+.contact-box .box .text h3 {
+    margin-bottom: 10px;
+    color: rgb(191, 21, 179);
+}
+
+.contact-box .box .text p {
+    color: #999797;
+}
+
+
 @media screen and (max-width:1000px){
     .main{
         display:block;
@@ -542,6 +622,12 @@ ul li a:hover{
     }
     .tools{
         width:50%;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
     
 }
@@ -638,6 +724,10 @@ ul li a:hover{
     }
     .tools{
         width:40%;
+    }
+
+    .contact-box {
+        gap: 10px;
     }
 }
 
