@@ -150,6 +150,7 @@ ul li a:hover{
     text-align: center;
     padding: 80px;
     
+    
 }
 .head h1{
     margin-top: 4%;
@@ -160,13 +161,18 @@ ul li a:hover{
     /* justify-content: center; */
     margin: auto;
     padding-bottom: 3px;
-
+   
 }
 
 #pic1{
     margin-top: 3%;
-    background-color: rgb(226, 93, 249);
-    border-radius: 30%;
+    /* background-color: rgb(226, 93, 249); */
+    border-radius: 50%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+     rgba(240, 46, 170, 0.3) 10px 10px,
+      rgba(240, 46, 170, 0.2) 15px 15px,
+     rgba(240, 46, 170, 0.1) 20px 20px,
+      rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 
@@ -373,7 +379,7 @@ ul li a:hover{
     content: "80%";
   }
   
-
+/* Tools */
 
   .tools{
     padding: 25px 30px;
@@ -382,7 +388,11 @@ ul li a:hover{
     box-shadow: 5px 5px 20px #ec4bd685;
     border-radius: 10px;
     margin: auto;
+    margin-top: 5%;
   }
+ 
+
+
   .tools h2{
     text-align: center;
     border-bottom: 3px dotted rgb(251, 141, 235);
@@ -409,12 +419,82 @@ ul li a:hover{
   .tool-kit img{
     width:100px;
   }
+
+ 
+
+
   .tool-kit div h4{
     text-align: center;
     margin-top: 3%;
 
   }
+
+
   
+
+ .tool-box {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+ 
+}
+
+.tool-box img {
+  width: 100px;
+  height: 100px;
+ 
+}
+
+.tool-box::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: 120%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.tool-box:hover::after {
+  visibility: visible;
+  opacity: 1;
+  background-color: var(--tooltip-color);
+}
+
+.tool-box[data-tooltip-color="#e34c26"]::after { --tooltip-color: #e34c26; }
+.tool-box[data-tooltip-color="#2965f1"]::after { --tooltip-color: #2965f1; }
+.tool-box[data-tooltip-color="#f7df1e"]::after { --tooltip-color: #f7df1e; }
+.tool-box[data-tooltip-color="#61dafb"]::after { --tooltip-color: #61dafb; }
+.tool-box[data-tooltip-color="#764abc"]::after { --tooltip-color: #764abc; }
+.tool-box[data-tooltip-color="#68a063"]::after { --tooltip-color: #68a063; }
+.tool-box[data-tooltip-color="#000000"]::after { --tooltip-color: #000000; }
+.tool-box[data-tooltip-color="#47a248"]::after { --tooltip-color: #47a248; }
+.tool-box[data-tooltip-color="#a80000"]::after { --tooltip-color: #a80000; }
+.tool-box[data-tooltip-color="#319795"]::after { --tooltip-color: #319795; }
+.tool-box[data-tooltip-color="#563d7c"]::after { --tooltip-color: #563d7c; }
+.tool-box[data-tooltip-color="#f05033"]::after { --tooltip-color: #f05033; }
+.tool-box[data-tooltip-color="#ff6c37"]::after { --tooltip-color: #ff6c37; }
+.tool-box[data-tooltip-color="#563d7c"]::after { --tooltip-color: #563d7c; }
+.tool-box[data-tooltip-color="#319795"]::after { --tooltip-color: #319795; }
+
+
+   /*  */
+  
+
+
+
+
+
+
+
 
 
 /* project-section */
@@ -429,17 +509,19 @@ ul li a:hover{
 }
 
 .projectCard{
-    width:300px;
-    height:310px;
+    width:350px;
+    height:500px;
     background-color: rgb(36, 34, 34);
     border-radius: 5px;
     margin-inline: 20px;
     padding: 11px;
     margin-top: 5%;
+   
 }
 .projectCard:hover{
     box-shadow: rgba(226, 56, 245, 0.4) 0px 0px 0px 2px, rgba(239, 71, 206, 0.65) 0px 4px 6px -1px, rgba(242, 50, 191, 0.345) 0px 1px 0px inset;
     cursor: pointer;
+    
     /* background-color:blue ; */
 }
 .projectCard img{
@@ -449,12 +531,18 @@ ul li a:hover{
 
 .projectCard p{
     margin-top: 11px;
+    text-align: justify;
 
+}
+.projectCard h4{
+    margin-top: 4%;
 }
 
 .projectCard .pro {
     display: flex;
     justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
 
 }
 
@@ -469,6 +557,8 @@ ul li a:hover{
     background-color: rgb(191, 21, 179);
     color: white;
     border-radius: 20px;
+
+   
 }
 
 
@@ -505,6 +595,7 @@ ul li a:hover{
     cursor: pointer;
     /* background-color:blue ; */
 }
+
 
 .contact-inputs{
     margin-top: 5%;
@@ -564,6 +655,7 @@ ul li a:hover{
     /* flex-direction: column; */
     justify-content: space-evenly;
     padding: 50px 0;
+    
 }
 
 .contact-box .box {
@@ -711,6 +803,9 @@ ul li a:hover{
         width:60%;
 
     }
+    .projectCard{
+        height:500px;
+    }
    
     .pro #git{
         width:34px;
@@ -723,6 +818,7 @@ ul li a:hover{
     }
     .head h1{
         width:50%;
+        margin-bottom: 2%;
     }
     .skills-bar{
         width:30%;
@@ -737,7 +833,14 @@ ul li a:hover{
     }
 }
 
+@media screen and (min-width:300px) and (max-width:420px){
 
+    .projectCard{
+        height:700px;
+        width:500px;
+    }
+
+}
 
 
 
