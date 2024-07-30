@@ -531,7 +531,9 @@ ul li a:hover{
 
 .projectCard p{
     margin-top: 11px;
-    text-align: justify;
+    /* align-items: center; */
+    /* text-align: justify; */
+   
 
 }
 .projectCard h4{
@@ -831,18 +833,57 @@ ul li a:hover{
     .contact-box {
         gap: 10px;
     }
+
+
 }
 
-@media screen and (min-width:300px) and (max-width:420px){
+@media screen and (min-width:400px) and (max-width:500px){
 
     .projectCard{
-        height:700px;
-        width:500px;
+        height:550px;
+        width:100%;
     }
-
+    .contact-box .box{
+        width:100%;
+     }
+ 
+     .contact-box .box p{
+         font-size: 13px;
+      }
+      .contact-box .box text{
+         font-size: 14px;
+      }
+      .connect{
+        width:80%;
+     }
 }
 
 
+@media screen and (min-width:200px) and (max-width:400px){
+     
+    .projectCard{
+        height:570px;
+        width:100%;
+    }
+    .projectCard p{
+        font-size: 14px;
+    }
+
+    .contact-box .box{
+       width:100%;
+    }
+
+    .contact-box .box p{
+        font-size: 13px;
+     }
+     .contact-box .box text{
+        font-size: 14px;
+     }
+     .connect{
+        width:80%;
+     }
+
+}
 
  
 
